@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(to bottom, #1db954, #121212);
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #bbb;
+    font-size: 0.875rem;
+}
+
+.card-content button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.card-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .header p {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        height: 250px;
+    }
+}
